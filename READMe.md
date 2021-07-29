@@ -45,8 +45,12 @@ Set up the following configurations:
 ## Setting Up a Webhook
 Setting up the webhook allows GitHub to trigger Jenkins to start a new build whenever a new commit is pushed.
 
-In the GitHub repository that is to be linked to Jenkins, create a new Webhook (Settings-->Webhooks-->Add webhook)
+- In the GitHub repository that is to be linked to Jenkins, create a new Webhook (Settings-->Webhooks-->Add webhook)
 
-Payload URL: Add the URL (usually specified with ip and port) with /github-webhook/ appended at the end
-Content type: Select application/json
-Any new pushes to the repository should now trigger a new build, shown in Build History where the Console Output can be read for each individual build
+- Payload URL: Add the URL (usually specified with ip and port) with /github-webhook/ appended at the end
+
+- Content type: Select application/json
+
+- Any new pushes to the repository should now trigger a new build, shown in 
+
+- Build History where the Console Output can be read for each individual build
