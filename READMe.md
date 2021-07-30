@@ -14,7 +14,7 @@ Jenkins is a free and open source automation server. It helps automate the parts
 - On the left you should see `New item`, select that. 
 
 **Step 2: Create job**
-- Under `Enter an item anme` write the appropriate name for your job 
+- Under `Enter an item name` write the appropriate name for your job 
 
 
 ## SSH Connection Between Github and Jenkins 
@@ -54,3 +54,13 @@ Setting up the webhook allows GitHub to trigger Jenkins to start a new build whe
 - Any new pushes to the repository should now trigger a new build, shown in 
 
 - Build History where the Console Output can be read for each individual build
+
+# Buiklding an AMI 
+An Amazon Machine Image is a special type of virtual appliance that is used to create a virtual machine within the Amazon Elastic Compute Cloud. It serves as the basic unit of deployment for services delivered using EC2.
+
+- Select the EC2 instance then click `Action`
+- Choose `Image and Templates` then `Create Image`
+- Input ami image name, description then key(Name -> eng89_brittany_db_ami)
+- Now select `Create` 
+
+Your Ami should now be found on the AMI section on the dashboard
